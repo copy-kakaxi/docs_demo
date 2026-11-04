@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: '/docs_demo/', // <-- 加上这一行！前后都要带斜杠
   title: "过程集",
   description: "A VitePress Site",
   themeConfig: {
