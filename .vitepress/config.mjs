@@ -2,31 +2,68 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "My Awesome Project",
+  title: "过程集",
   description: "A VitePress Site",
   themeConfig: {
+    outlineTitle: "快速定位",
+    outline: [2,6],
+    logo: {
+      src: '/logo.png',
+      alt: 'Logo'
+    },
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: '家', items: [
+        {text: '下拉Markdown 演示', link: '/markdown-examples'},
+        {text: '下拉', link: '/'},
+      ] },
+      { text: '事例', link: '/markdown-examples' }
     ],
 
     sidebar: [
       {
         text: 'Examples',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: 'Markdown 演示', link: '/markdown-examples' },
+          { text: 'Runtime API 演示', link: '/api-examples' },
+          { text: 'qq API 演示', link: '/api-examples' }
+
+        ]
+      },
+      {
+        text: 'Examples',
+        items: [
+          { text: 'Markdown 演示2', link: '/markdown-examples' },
+          { text: 'Runtime API 演示2', link: '/api-examples' }
         ]
       }
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/copy-kakaxi' }
     ],
     footer: {
-  message: '基于 MIT 协议发布',
-  copyright: 'Copyright © 2026 ycx'
-}
-  }
+        message: '基于 MIT 协议发布',
+        copyright: 'Copyright © 2026 ycx'
+    },
+    search: {
+      provider: "local",
+      options: {
+        translations: {
+          button: {
+            buttonText: "搜索文档",
+            buttonAriaLabel: "搜索文档",
+          },
+          modal: {
+            noResultsText: "无法找到相关结果",
+            resetButtonTitle: "清除查询条件",
+            footer: {
+              selectText: "选择",
+              navigateText: "切换",
+            },
+          },
+        },
+      },
+    },
+  },
 })

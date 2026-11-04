@@ -3,3 +3,8 @@ node_modules
 .vitepress/dist
 .DS_Store
 *.local
+dist
+dist-ssr
+cache
+.cache
+.temp
