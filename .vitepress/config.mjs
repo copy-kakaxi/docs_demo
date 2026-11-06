@@ -15,19 +15,19 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '家', items: [
-        {text: '下拉Markdown 演示', link: '/markdown-examples'},
-        {text: '下拉', link: '/'},
+        {text: 'C++的', link: 'cpp/async/threadsafe-lookup-table'},
+        {text: '下拉下拉', link: '/'},
       ] },
       { text: '事例', link: '/markdown-examples' }
     ],
 
     sidebar: [
       {
-        text: 'Examples',
+        text: '并发编程',
         items: [
-          { text: 'Markdown 演示', link: '/markdown-examples' },
-          { text: 'Runtime API 演示', link: '/api-examples' },
-          { text: 'qq API 演示', link: '/api-examples' }
+          { text: '[16]线程安全的查找表', link: '/home/ycx/Objects/docs_demo/cpp/async/threadsafe-lookup-table' },
+          { text: '[17]线程安全的链表', link: '/api-examples' },
+          { text: '[18]线程安全无锁并发栈', link: '/api-examples' }
 
         ]
       },
