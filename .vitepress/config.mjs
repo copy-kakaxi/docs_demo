@@ -25,8 +25,8 @@ export default defineConfig({
       {
         text: '并发编程',
         items: [
-          { text: '[16]线程安全的查找表', link: '/home/ycx/Objects/docs_demo/cpp/async/threadsafe-lookup-table' },
-          { text: '[17]线程安全的链表', link: '/home/ycx/Objects/docs_demo/cpp/async/code_artifact.md' },
+          { text: '[16]线程安全的查找表', link: 'cpp/async/threadsafe-lookup-table' },
+          { text: '[17]线程安全的链表', link: 'cpp/async/code_artifact' },
           { text: '[18]线程安全无锁并发栈', link: '/api-examples' }
 
         ]
