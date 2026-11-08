@@ -14,11 +14,11 @@ export default defineConfig({
     },
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: '家', items: [
-        {text: 'C++的', link: 'cpp/async/threadsafe-lookup-table'},
+      { text: '编程', items: [
+        {text: 'C++', link: 'cpp/async/threadsafe-lookup-table'},
         {text: '下拉下拉', link: '/'},
       ] },
-      { text: '事例', link: '/markdown-examples' }
+      { text: '英语', link: '/markdown-examples' }
     ],
 
     sidebar: [
@@ -26,7 +26,7 @@ export default defineConfig({
         text: '并发编程',
         items: [
           { text: '[16]线程安全的查找表', link: '/home/ycx/Objects/docs_demo/cpp/async/threadsafe-lookup-table' },
-          { text: '[17]线程安全的链表', link: '/api-examples' },
+          { text: '[17]线程安全的链表', link: '/home/ycx/Objects/docs_demo/cpp/async/code_artifact.md' },
           { text: '[18]线程安全无锁并发栈', link: '/api-examples' }
 
         ]
