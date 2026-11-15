@@ -22,15 +22,25 @@ export default defineConfig({
     ],
 
     sidebar: [
+       {
+        text: '模板',
+        collapsed: true,// 开启折叠按钮，且默认收起
+        items: [
+          { text: '模板的实例化和具体化', link: '/cpp/async/cpp-template-instantiation-specialization_gpt' },
+          { text: '模板的实例化和具体化2', link: '/cpp/async/c.md' }
+        ]
+      },
       {
         text: '并发编程',
+        collapsed: true,// 开启折叠按钮，且默认收起
         items: [
-          { text: '[16]线程安全的查找表', link: 'cpp/async/threadsafe-lookup-table' },
-          { text: '[17]线程安全的链表', link: 'cpp/async/code_artifact' },
+          { text: '[16]线程安全的查找表', link: '/cpp/async/threadsafe-lookup-table' },
+          { text: '[17]线程安全的链表', link: '/cpp/async/code_artifact' },
           { text: '[18]线程安全无锁并发栈', link: '/api-examples' }
 
         ]
       },
+         
       {
         text: 'Examples',
         items: [
