@@ -23,6 +23,14 @@ export default defineConfig({
 
     sidebar: [
        {
+        text: 'STL',
+        collapsed: true,// 开启折叠按钮，且默认收起
+        items: [
+          { text: 'Vector', link: 'cpp/async/c_stl_std_vector.md' }
+
+        ]
+      },
+       {
         text: '模板',
         collapsed: true,// 开启折叠按钮，且默认收起
         items: [
