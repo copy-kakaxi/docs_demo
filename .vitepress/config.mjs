@@ -26,7 +26,8 @@ export default defineConfig({
         text: 'STL',
         collapsed: true,// 开启折叠按钮，且默认收起
         items: [
-          { text: 'Vector', link: 'cpp/async/c_stl_std_vector.md' }
+          { text: 'Vector', link: 'cpp/async/c_stl_std_vector.md' },
+          { text: 'Vector_gpt', link: '/cpp/async/Vector_STL_gpt' }
 
         ]
       },
