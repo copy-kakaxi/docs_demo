@@ -385,3 +385,8 @@ void TestLockFreeStack()
 ```
 
 **一句话总结：无锁栈通过 CAS 解决指针竞争，借助 `std::shared_ptr` 保障异常安全，并利用原子计数器与延迟删除链表实现了“无人并发读时集中回收，有人并发读时暂存挂起”的安全内存管理闭环。**
+
+## 完整代码的位置
+::: tip
+/home/ycx/Code/thred_learning/18_LockFreeStack
+:::

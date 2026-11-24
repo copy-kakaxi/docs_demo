@@ -43,8 +43,11 @@ nav: [
           text: 'STL',
           collapsed: true, // 开启折叠按钮，且默认收起
           items: [
+            { text: 'String', link: '/cpp/STL/c_stl_std_string' },
             { text: 'Vector', link: '/cpp/STL/c_stl_std_vector' },
-            { text: 'Vector_gpt', link: '/cpp/STL/Vector_STL_gpt' }
+            { text: 'Vector_gpt', link: '/cpp/STL/Vector_STL_gpt' },
+            { text: 'List', link: '/cpp/STL/c_stl_std_list' },
+            { text: 'Deque', link: '/cpp/STL/c_stl_std_deque' }
           ]
         },
         {
@@ -62,7 +65,9 @@ nav: [
             { text: '[16]线程安全的查找表', link: '/cpp/async/threadsafe-lookup-table' },
             { text: '[17]线程安全的链表', link: '/cpp/async/code_artifact' },
             { text: '[18]无锁并发栈(延迟链表)', link: '/cpp/async/18_safe_stack' },
-            { text: '[19]无锁并发栈(风险指针)', link: '/cpp/async/19_hazard_pointers' }
+            { text: '[19]无锁并发栈(风险指针)', link: '/cpp/async/19_hazard_pointers' },
+            { text: '[20]无锁并发栈(引用计数)', link: '/cpp/async/20_reference_counting' }
+            
           ]
         }
       ],

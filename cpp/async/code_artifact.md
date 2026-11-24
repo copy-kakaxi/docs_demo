@@ -502,3 +502,8 @@ while (node* const next = current->next.get()) {
 ```
 
 **一句话总结：手递手加锁以单向拓扑序实现高并发无死锁遍历；但强行在单向细粒度锁链表上挂载裸尾指针，会打破加锁闭环，引入致命的生命周期竞态。**
+
+## 完整代码的位置
+::: tip
+/home/ycx/Code/thred_learning/17_thread_safe_list
+:::
